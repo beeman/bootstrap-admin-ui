@@ -1,22 +1,21 @@
 var gulp = require('gulp'),
   concat = require('gulp-concat'),
   connect = require('gulp-connect'),
-  less = require('gulp-less'),
+  sass = require('gulp-sass'),
   minifycss = require('gulp-minify-css'),
   rename = require('gulp-rename'),
   rimraf = require('gulp-rimraf')
 watch = require('gulp-watch');
 
 var paths = {
-  images: 'img/**/*.*',
-  styles: 'less/**/*.less',
+  sass: 'sass/**/*.scss',
 };
 
 /**
  * Watch src and execute tasks when changes are made
  */
 gulp.task('watch', function() {
-  gulp.watch([ paths.styles ], [ 'less', 'livereload' ]);
+  gulp.watch([ paths.sass ], [ 'sass', 'livereload' ]);
 });
 
 /*
@@ -41,7 +40,7 @@ gulp.task('livereload', function() {
 /*
  * Cleans the distribution directory
  */
-gulp.task('clean', [ 'clean-css', 'clean-images', 'clean-dist' ]);
+gulp.task('clean', [ 'clean-css', 'clean-dist' ]);
 
 gulp.task('clean-dist', function() {
   return gulp.src('dist', {
@@ -61,21 +60,12 @@ gulp.task('clean-css', function() {
     }));
 });
 
-gulp.task('clean-images', function() {
-  return gulp.src('dist/img/*', {
-      read: false
-    })
-    .pipe(rimraf({
-      force: true
-    }));
-});
-
 /**
- * Compile less
+ * Compile sass
  */
-gulp.task('less', function() {
-  gulp.src(paths.styles)
-    .pipe(less())
+gulp.task('sass', function() {
+  gulp.src(paths.sass)
+    .pipe(sass())
     .pipe(concat('rdash.css'))
     .pipe(gulp.dest('dist/css'));
 
@@ -86,8 +76,8 @@ gulp.task('less', function() {
 });
 
 /*
- * Copy assets and compile less.
+ * Copy assets and compile sass.
  */
-gulp.task('build', [ 'less' ]);
+gulp.task('build', [ 'sass' ]);
 
 gulp.task('default', [ 'build', 'connect', 'livereload', 'watch' ]);
