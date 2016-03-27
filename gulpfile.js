@@ -66,12 +66,12 @@ gulp.task('clean-css', function() {
 gulp.task('sass', function() {
   gulp.src(paths.sass)
     .pipe(sass())
-    .pipe(concat('rdash.css'))
+    .pipe(concat('bootstrap-admin-ui.css'))
     .pipe(gulp.dest('dist/css'));
 
-  return gulp.src('dist/css/rdash.css')
+  return gulp.src('dist/css/bootstrap-admin-ui.css')
     .pipe(minifycss())
-    .pipe(rename('rdash.min.css'))
+    .pipe(rename('bootstrap-admin-ui.min.css'))
     .pipe(gulp.dest('dist/css/'))
 });
 

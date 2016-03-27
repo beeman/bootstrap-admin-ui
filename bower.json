@@ -1,21 +1,22 @@
 {
-  "name": "rdash-ui",
-  "description": "Bloat free responsive admin style dashboard.",
-  "version": "1.0.1",
-  "homepage": "https://github.com/beeman/rdash-ui/",
+  "name": "bootstrap-admin-ui",
+  "description": "Fork of rdash/rdash-ui that uses SASS with only the layout (no font/widget/loading styles) ",
+  "version": "1.0.0",
+  "homepage": "https://github.com/beeman/bootstrap-admin-ui/",
   "repository": {
     "type": "git",
-    "url": "git://github.com/beeman/rdash-ui.git"
+    "url": "git://github.com/beeman/bootstrap-admin-ui.git"
   },
   "license": "MIT",
   "keywords": [
+    "bootstrap",
     "responsive",
     "dashboard",
     "admin"
   ],
   "main": [
-    "dist/css/rdash.css",
-    "dist/css/rdash.min.css"
+    "dist/css/bootstrap-admin-ui.css",
+    "dist/css/bootstrap-admin-ui.min.css"
   ],
   "ignore": [
     "**/**.*",
@@ -23,7 +24,7 @@
     "!bower.json",
     "!README.md",
     "!dist/css",
-    "!less/"
+    "!sass/"
   ],
   "dependencies": {}
 }
