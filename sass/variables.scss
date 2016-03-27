@@ -1,12 +1,16 @@
 /* #592727 RED */
 /* #2f5927 GREEN */
 /* #30426a BLUE (default)*/
+$mainColor: #30426a;
+$highlightColor: lighten($mainColor, 20%);
 
 /* Sidebar background color */
-$sidebarBaseColor: #30426a;
+$sidebarBaseColor: $mainColor;
 /* Sidebar header and footer color */
 $sidebarHeaderColor: darken($sidebarBaseColor, 2%);
 /* Sidebar title text colour */
 $sidebarTitleColor: lighten($sidebarBaseColor, 30%);
 /* Sidebar menu item hover color */
-$sidebarMenuItemHover: #e99d1a;
+$sidebarMenuItemHover: $highlightColor;
+/* Sidebar menu item link color */
+$sidebarMenuItemLink: lighten($sidebarBaseColor, 40%);

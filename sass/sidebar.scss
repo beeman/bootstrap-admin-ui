@@ -63,7 +63,7 @@ ul.sidebar {
     a {
       text-indent: 25px;
       font-size: 15px;
-      color: #b2bfdc;
+      color: $sidebarMenuItemLink;
       line-height: 40px;
     }
     a:hover {
@@ -121,7 +121,7 @@ ul.sidebar {
   text-align: center;
   div {
     a {
-      color: #b2bfdc;
+      color: $sidebarMenuItemLink;
       font-size: 12px;
       line-height: 43px;
     }
