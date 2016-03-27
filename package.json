@@ -1,7 +1,15 @@
 {
   "name": "bootstrap-admin-ui",
-  "description": "Fork of rdash/rdash-ui that uses SASS with only the layout (no font/widget/loading styles) ",
   "version": "1.0.0",
+  "license": "MIT",
+  "description": "Fork of rdash/rdash-ui that uses SASS with only the layout (no font/widget/loading styles) ",
+  "author": "Bram Borggreve <borggreve@gmail.com>",
+  "contributors": [
+    "Elliot Hesp <elliot.hesp@gmail.com>",
+    "Leonel Samayoa <leonel.e.samayoa@gmail.com> (http://gobliip.com)",
+    "Ricardo Pascua <rdpascua@outlook.com>"
+  ],
+  "homepage": "https://github.com/beeman/bootstrap-admin-angular",
   "repository": {
     "type": "git",
     "url": "https://github.com/beeman/bootstrap-admin-ui.git"
@@ -9,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/beeman/bootstrap-admin-ui/issues"
   },
-  "license": "MIT",
   "dependencies": {
     "gulp": "^3.8.8",
     "gulp-concat": "^2.4.0",
