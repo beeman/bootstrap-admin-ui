@@ -2,6 +2,20 @@
 
 Fork of [rdash/rdash-ui](https://github.com/rdash/rdash-ui) that uses SASS with only the layout (no font/widget/loading styles) 
 
+## Installation
+
+Via NPM
+
+    $ npm install bootstrap-admin-ui
+    
+Via Bower
+
+    $ bower install bootstrap-admin-ui
+
+## Usage
+
+Include the files `dist/css/bootstrap-admin-ui.css` or `dist/css/bootstrap-admin-ui.min.css` in your project.
+
 ## Contributing
 
 > Do not use the `dist` directory for contributions, please edit the `sass` files.
