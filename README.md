@@ -16,6 +16,10 @@ Via Bower
 
 Include the files `dist/css/bootstrap-admin-ui.css` or `dist/css/bootstrap-admin-ui.min.css` in your project.
 
+## Example
+
+ - [bootstrap-admin-angular](https://github.com/beeman/bootstrap-admin-angular) is a project that demonstrates the usage of this package with Angular
+
 ## Contributing
 
 > Do not use the `dist` directory for contributions, please edit the `sass` files.
