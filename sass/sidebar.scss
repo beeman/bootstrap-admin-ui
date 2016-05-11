@@ -4,15 +4,13 @@
  * Sidebar
  */
 #sidebar-wrapper {
-  background: $sidebarBaseColor;
+  background: $sidebarBackgroundColor;
 }
 
-ul.sidebar .sidebar-main a,
 .sidebar-footer,
-ul.sidebar .sidebar-list a:hover,
 #page-wrapper:not(.open) ul.sidebar .sidebar-title.separator {
   /* Sidebar header and footer color */
-  background: $sidebarHeaderColor;
+  background: $sidebarHeaderBackgroundColor;
 }
 
 ul.sidebar {
@@ -35,7 +33,8 @@ ul.sidebar {
     }
   }
   .sidebar-main {
-    height: 65px;
+    height: $headerHeight;
+    background: $sidebarHeaderBackgroundColor;
     a {
       font-size: 18px;
       line-height: 60px;
@@ -63,16 +62,12 @@ ul.sidebar {
     a {
       text-indent: 25px;
       font-size: 15px;
-      color: $sidebarMenuItemLink;
+      color: $sidebarMenuItemLinkColor;
+      border-right: 4px solid $sidebarBackgroundColor;
       line-height: 40px;
     }
     a:hover {
       color: #fff;
-      border-left: 3px solid $sidebarMenuItemHover;
-      text-indent: 22px;
-      .menu-icon {
-        text-indent: 25px;
-      }
     }
     .menu-icon {
       float: right;
@@ -81,12 +76,20 @@ ul.sidebar {
       width: 70px;
     }
   }
+  .sidebar-list.active {
+    background: $sidebarItemActiveBackgroundColor;
+    a {
+      border-right: 4px solid $sidebarItemActiveBorderColor;
+      color: #fff;
+    }
+  }
 }
 
 #page-wrapper:not(.open) {
   ul.sidebar {
     bottom: 0;
     .sidebar-title {
+      transition: all .6s ease 0s;
       display: none;
       height: 0px;
       text-indent: -100px;
@@ -121,7 +124,7 @@ ul.sidebar {
   text-align: center;
   div {
     a {
-      color: $sidebarMenuItemLink;
+      color: $sidebarMenuItemLinkColor;
       font-size: 12px;
       line-height: 43px;
     }

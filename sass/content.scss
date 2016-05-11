@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 #content-wrapper {
   padding-left: 0;
   margin-left: 0;
@@ -19,4 +21,20 @@
 
 #page-wrapper.open #sidebar-wrapper {
   left: 150px;
+}
+
+.page {
+  background: $pageBackgroundColor;
+  color: $pageTextColor;
+  margin: 20px;
+  padding: 20px 0 10px;
+  border-radius: 2px;
+
+  .row > div {
+    margin-bottom: 0;
+  }
+}
+
+.panel-footer ul.pagination {
+  margin: 0;
 }

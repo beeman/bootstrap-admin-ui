@@ -1,16 +1,44 @@
-/* #592727 RED */
-/* #2f5927 GREEN */
-/* #30426a BLUE (default)*/
-$mainColor: #30426a;
-$highlightColor: lighten($mainColor, 20%);
+/* Body background */
+$colorBodyBackground: #e8ebf1;
+
+/* Body text */
+$colorBodyText: #2F3135;
+
+/* Header background */
+$headerBackgroundColor: #FFF;
+
+/* Header text */
+$headerTextColor: #171B21;
+
+/* Header height */
+$headerHeight: 60px;
+
+/* Header shadow */
+$headerBoxShadow: 0 1px 4px rgba(46,51,59,0.1);
+
+/* Header Dropdown shadow */
+$headerDropdownBoxShadow: 0 6px 12px rgba(0,0,0,0.175);
 
 /* Sidebar background color */
-$sidebarBaseColor: $mainColor;
-/* Sidebar header and footer color */
-$sidebarHeaderColor: darken($sidebarBaseColor, 2%);
+$sidebarBackgroundColor: #393F4A;
+
+/* Sidebar header and footer background color */
+$sidebarHeaderBackgroundColor: #4B515B;
+
 /* Sidebar title text colour */
-$sidebarTitleColor: lighten($sidebarBaseColor, 30%);
-/* Sidebar menu item hover color */
-$sidebarMenuItemHover: $highlightColor;
+$sidebarTitleColor: #88909E;
+
+/* Sidebar menu item background color */
+$sidebarItemActiveBackgroundColor: #2A2F38;
+
+/* Sidebar menu item border color */
+$sidebarItemActiveBorderColor: lighten($sidebarBackgroundColor, 20%);
+
 /* Sidebar menu item link color */
-$sidebarMenuItemLink: lighten($sidebarBaseColor, 40%);
+$sidebarMenuItemLinkColor: $sidebarTitleColor;
+
+/* Page background color */
+$pageBackgroundColor: #FFF;
+
+/* Page text color */
+$pageTextColor: #333;

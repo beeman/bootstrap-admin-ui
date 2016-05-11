@@ -1,15 +1,19 @@
+@import "variables.scss";
+
 /**
  * Header
  */
 .row.header {
-  height: 60px;
-  background: #fff;
+  height: $headerHeight;
+  background: $headerBackgroundColor;
+  color: $headerTextColor;
   margin-bottom: 15px;
+  box-shadow: $headerBoxShadow;
   & > div:last-child {
     padding-right: 0;
   }
   .meta {
-    .page {
+    .title {
       font-size: 17px;
       padding-top: 11px;
     }
@@ -38,7 +42,7 @@
       text-align: center;
       vertical-align: middle;
       a {
-        color: #919191;
+        color: #93969a;
         display: block;
       }
       i {
@@ -53,8 +57,7 @@
       }
       ul.dropdown-menu {
         border-radius: 2px;
-        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .05);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, .05);
+        box-shadow: $headerDropdownBoxShadow;
         .dropdown-header {
           text-align: center;
         }
